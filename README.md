@@ -1,4 +1,4 @@
-Projeto: Página de Login com vídeo de fundo
+PROJETO: Página de Login com vídeo de fundo
 
 Breve descrição
 ----------------
