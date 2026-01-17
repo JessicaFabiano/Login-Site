@@ -1,19 +1,19 @@
 /* Fonte Nunito do Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
 
-/*Reset básico para remover espaços padrões e usar box-sizing mais previsível */
+/* Reset básico para remover espaços padrões e usar box-sizing mais previsível */
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-/*Fonte padrão do site */
+/* Fonte padrão do site */
 body{
     font-family: 'Nunito', sans-serif;
 }
 
-/*Vídeo fica fixo em segundo plano e cobre toda a tela */
+/* Vídeo fica fixo em segundo plano e cobre toda a tela */
 .video{
     position: fixed;
     right: 0;
@@ -23,7 +23,7 @@ body{
     object-fit: cover; /* corta/ajusta o vídeo para cobrir a área */
     padding: 0px;
     margin: 0px;
-    opacity: 0.3; /* deixo o vídeo mais claro para o formulário sobressair */
+    opacity: 0.3; /* deixa o vídeo mais claro para o formulário sobressair */
 }
 
 /* Fundo alternativo (imagem) caso o vídeo não carregue */
@@ -60,7 +60,7 @@ body{
     border: 1px solid white;
 }
 
-/* Estilo básico para os inputs; íntegros, sem bordas internas que conflitam */
+/* Estilo básico para os inputs, sem bordas internas que conflitam */
 input{
     outline: none;
     border: none;
