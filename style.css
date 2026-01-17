@@ -1,0 +1,139 @@
+/* Fonte Nunito do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+/*Reset básico para remover espaços padrões e usar box-sizing mais previsível */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*Fonte padrão do site */
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Vídeo fica fixo em segundo plano e cobre toda a tela */
+.video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* corta/ajusta o vídeo para cobrir a área */
+    padding: 0px;
+    margin: 0px;
+    opacity: 0.3; /* deixo o vídeo mais claro para o formulário sobressair */
+}
+
+/* Fundo alternativo (imagem) caso o vídeo não carregue */
+.background{
+    background-image: url("./1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+/* Centralizar o conteúdo (o formulário) sobre o fundo */
+.login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caixa do formulário — transparente para mostrar o fundo, com leve sombra */
+.login-form{
+    width: 400px;
+    padding: 20px;
+    background: transparent;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 50px;
+    border-radius: 10px;
+    z-index: 999; /* garante que fique acima do vídeo */
+    opacity: 0.91;
+    box-shadow: 0px 0px 7px 0px #f1a6bc;
+    backdrop-filter: blur(10px); /* efeito de desfoque atrás do formulário */
+    border: 1px solid white;
+}
+
+/* Estilo básico para os inputs; íntegros, sem bordas internas que conflitam */
+input{
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+
+/* Título do formulário */
+h1{
+    padding-bottom: 40px;
+    color: white;
+}
+
+/* Placeholder visível em branco */
+input::placeholder{
+    color: white;
+    font-size: 16px;
+}
+
+/* Botão*/
+button{
+    background: none;
+    outline: none;
+    background: #da2859;
+    padding: 10px 40px;
+    font-size: 17px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+button:hover{
+    background: #f1a6bc;
+}
+
+/* Ajustes para telas pequenas (responsivo) */
+@media(max-width: 600px) {
+
+    .video{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        padding: 0px;
+        margin: 0px;
+        opacity: 0.3;
+    }
+
+    .background{
+        background-image: url("./1.jpg");
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .login-form{
+        width: 90%;
+        padding: 10%;
+        background: white;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 70px;
+        border-radius: 10px;
+    }
+}
